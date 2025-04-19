@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5dd3df30832b0dc100bc41822bf4551 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e5dd3df30832b0dc100bc41822bf4551" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e5dd3df30832b0dc100bc41822bf4551 = L.map(
+                "map_e5dd3df30832b0dc100bc41822bf4551",
+                {
+                    center: [56.9496, 24.1052],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d518d4658dbfaaa6cc890b4f25131ea6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var marker_a3e762d6dbe80307bafbbcbf6c5a9a5f = L.marker(
+                [56.9655, 24.1254],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_c7a5a2cf7ce375611108d436957f1b51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3e762d6dbe80307bafbbcbf6c5a9a5f.setIcon(icon_c7a5a2cf7ce375611108d436957f1b51);
+        
+    
+        var popup_af5190d543d9e102482661ef301987c6 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_45a2262afd954175ad24621660841526 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjEuIE1pZXJhIGllbGE8L3N0cm9uZz48YnI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vd3d3LnJlZHpldC5sdi9pbWFnZXMvbGFyZ2UvNy8xNC9WLTY5OC0xOS5qcGciIHdpZHRoPSIxODAiPjxicj4KICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1NaWVyYStpZWxhLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_af5190d543d9e102482661ef301987c6.setContent(i_frame_45a2262afd954175ad24621660841526);
+        
+
+        marker_a3e762d6dbe80307bafbbcbf6c5a9a5f.bindPopup(popup_af5190d543d9e102482661ef301987c6)
+        ;
+
+        
+    
+    
+            marker_a3e762d6dbe80307bafbbcbf6c5a9a5f.bindTooltip(
+                `<div>
+                     1. Miera iela
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f20fe2f79c29e61ea7f3a2fd96418947 = L.marker(
+                [56.9404, 24.0812],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_8314846e71f245d134830166abe879a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f20fe2f79c29e61ea7f3a2fd96418947.setIcon(icon_8314846e71f245d134830166abe879a5);
+        
+    
+        var popup_6442da2a7bd6003d6143b6c13856e113 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_c79c905f0504dd9830ad8a2169d524d6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjIuIMSAZ2Vuc2thbG5zIE1hcmtldDwvc3Ryb25nPjxicj4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly90c2UxLm1tLmJpbmcubmV0L3RoP2lkPU9JUC5TYlBLdW1MaWZORFNVSmF0OU9LSUFnSGFFOCIgd2lkdGg9IjE4MCI+PGJyPgogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPU5vbWV0bnUraWVsYSs2NCwrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_6442da2a7bd6003d6143b6c13856e113.setContent(i_frame_c79c905f0504dd9830ad8a2169d524d6);
+        
+
+        marker_f20fe2f79c29e61ea7f3a2fd96418947.bindPopup(popup_6442da2a7bd6003d6143b6c13856e113)
+        ;
+
+        
+    
+    
+            marker_f20fe2f79c29e61ea7f3a2fd96418947.bindTooltip(
+                `<div>
+                     2. Āgenskalns Market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba203368ca52abd4ff61bdc1ab5f50d8 = L.marker(
+                [56.9588, 24.1344],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_d3ef6519b5c56eef8a142e7a3a18f5f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba203368ca52abd4ff61bdc1ab5f50d8.setIcon(icon_d3ef6519b5c56eef8a142e7a3a18f5f3);
+        
+    
+        var popup_4c846588c8a11da554be5126fac0f17c = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_d1dc04c7558c99c8dea5d7b8c3ed935d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjMuIFRhbGxpbmFzIGllbGFzIGt2YXJ0xIFsczwvc3Ryb25nPjxicj4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly90c2UyLm1tLmJpbmcubmV0L3RoP2lkPU9JUC5veEZKekZPb3EwOFRUdTNKNFkyTDZnSGFGaiIgd2lkdGg9IjE4MCI+PGJyPgogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPVRhbGxpbmFzK2llbGErMTAsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_4c846588c8a11da554be5126fac0f17c.setContent(i_frame_d1dc04c7558c99c8dea5d7b8c3ed935d);
+        
+
+        marker_ba203368ca52abd4ff61bdc1ab5f50d8.bindPopup(popup_4c846588c8a11da554be5126fac0f17c)
+        ;
+
+        
+    
+    
+            marker_ba203368ca52abd4ff61bdc1ab5f50d8.bindTooltip(
+                `<div>
+                     3. Tallinas ielas kvartāls
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f11c2d245fffe71ee5eb891ab7ac252 = L.marker(
+                [56.9447, 24.1201],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_12b51465dd49e2b03e93ca25cf028283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f11c2d245fffe71ee5eb891ab7ac252.setIcon(icon_12b51465dd49e2b03e93ca25cf028283);
+        
+    
+        var popup_fee270ace9a2da0f619c177c5fb679d6 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_5eeab0dec6b5ba62ba804d49ff4ac5af = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjQuIFNwxKvEt2VyaSBDcmVhdGl2ZSBRdWFydGVyPC9zdHJvbmc+PGJyPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL3RzZTEubW0uYmluZy5uZXQvdGg/aWQ9T0lQLkg1Q21OZzkxMDM0bkY3S3BrVXJDOGdIYUZqIiB3aWR0aD0iMTgwIj48YnI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9U3Bpa2VyaStRdWFydGVyLCtNYXNrYXZhcytpZWxhLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_fee270ace9a2da0f619c177c5fb679d6.setContent(i_frame_5eeab0dec6b5ba62ba804d49ff4ac5af);
+        
+
+        marker_8f11c2d245fffe71ee5eb891ab7ac252.bindPopup(popup_fee270ace9a2da0f619c177c5fb679d6)
+        ;
+
+        
+    
+    
+            marker_8f11c2d245fffe71ee5eb891ab7ac252.bindTooltip(
+                `<div>
+                     4. Spīķeri Creative Quarter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b98476acc020207e58debefb4235417 = L.marker(
+                [56.946, 24.1064],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_7454240a3098a52a52ff0e4b100ad777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b98476acc020207e58debefb4235417.setIcon(icon_7454240a3098a52a52ff0e4b100ad777);
+        
+    
+        var popup_bdc6e4e6ae12288bb96548440cd60e96 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_66fe0b54bcb86b128ec221eb1a5e331e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjEwLiBIb3VzZSBvZiB0aGUgQmxhY2toZWFkczwvc3Ryb25nPjxicj4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy83Lzc2L0hvdXNlX29mX3RoZV9CbGFja2hlYWRzX1JpZ2EuanBnIiB3aWR0aD0iMTgwIj48YnI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9UmF0c2xhdWt1bXMrNywrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_bdc6e4e6ae12288bb96548440cd60e96.setContent(i_frame_66fe0b54bcb86b128ec221eb1a5e331e);
+        
+
+        marker_5b98476acc020207e58debefb4235417.bindPopup(popup_bdc6e4e6ae12288bb96548440cd60e96)
+        ;
+
+        
+    
+    
+            marker_5b98476acc020207e58debefb4235417.bindTooltip(
+                `<div>
+                     10. House of the Blackheads
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_860b0c4fed6cd0a0186f27cd02af50ce = L.marker(
+                [56.943, 24.1174],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_6e20471bd37ff3af4fa9d035ed078120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_860b0c4fed6cd0a0186f27cd02af50ce.setIcon(icon_6e20471bd37ff3af4fa9d035ed078120);
+        
+    
+        var popup_600941e100b534d4fd963404dd325080 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_d01615a49aeaa53a6ab4a30909fe8687 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjExLiBSaWdhIENlbnRyYWwgTWFya2V0PC9zdHJvbmc+PGJyPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zLzUvNWYvUmlnYV9DZW50cmFsX01hcmtldF9wYXZpbGlvbnMuanBnIiB3aWR0aD0iMTgwIj48YnI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9UmlnYStDZW50cmFsK01hcmtldCIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_600941e100b534d4fd963404dd325080.setContent(i_frame_d01615a49aeaa53a6ab4a30909fe8687);
+        
+
+        marker_860b0c4fed6cd0a0186f27cd02af50ce.bindPopup(popup_600941e100b534d4fd963404dd325080)
+        ;
+
+        
+    
+    
+            marker_860b0c4fed6cd0a0186f27cd02af50ce.bindTooltip(
+                `<div>
+                     11. Riga Central Market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e0bebbd1e95b025c5eab0060d123028 = L.marker(
+                [56.9985, 24.1458],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_753cb3f9f0f692634b67e0cb4997ad1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e0bebbd1e95b025c5eab0060d123028.setIcon(icon_753cb3f9f0f692634b67e0cb4997ad1e);
+        
+    
+        var popup_f6960661d4f9dd98d59283c30cff7bf9 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_1629fab2f10f77d3687f22315029f3f2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjEyLiBNZcW+YXBhcmtzPC9zdHJvbmc+PGJyPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL2UvZTUvTWV6YXBhcmtzX21haW5fZW50cmFuY2UuanBnIiB3aWR0aD0iMTgwIj48YnI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9TWV6YXBhcmtzLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_f6960661d4f9dd98d59283c30cff7bf9.setContent(i_frame_1629fab2f10f77d3687f22315029f3f2);
+        
+
+        marker_5e0bebbd1e95b025c5eab0060d123028.bindPopup(popup_f6960661d4f9dd98d59283c30cff7bf9)
+        ;
+
+        
+    
+    
+            marker_5e0bebbd1e95b025c5eab0060d123028.bindTooltip(
+                `<div>
+                     12. Mežaparks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2debc4aee2bcf82922bb49558e26ee0 = L.marker(
+                [56.9473, 24.1093],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_8251c0cebd54a8527a72b3a38958496c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2debc4aee2bcf82922bb49558e26ee0.setIcon(icon_8251c0cebd54a8527a72b3a38958496c);
+        
+    
+        var popup_1b8c4dcf3e64f2c33b7722f30ccbab8a = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_9945760419edb2bd43c743efd9041200 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjEzLiBTa3QuIFBldGVycyBLaXJrZTwvc3Ryb25nPjxicj4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy83LzdjL1N0X1BldGVyJTI3c19DaHVyY2hfUmlnYS5qcGciIHdpZHRoPSIxODAiPjxicj4KICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1TdCtQZXRlciUyN3MrQ2h1cmNoLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_1b8c4dcf3e64f2c33b7722f30ccbab8a.setContent(i_frame_9945760419edb2bd43c743efd9041200);
+        
+
+        marker_b2debc4aee2bcf82922bb49558e26ee0.bindPopup(popup_1b8c4dcf3e64f2c33b7722f30ccbab8a)
+        ;
+
+        
+    
+    
+            marker_b2debc4aee2bcf82922bb49558e26ee0.bindTooltip(
+                `<div>
+                     13. Skt. Peters Kirke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b33da173e39e2fb58bb7e85308b49cfc = L.marker(
+                [56.9686, 23.7703],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_81352e7c804d97311cf893c284fafbcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b33da173e39e2fb58bb7e85308b49cfc.setIcon(icon_81352e7c804d97311cf893c284fafbcb);
+        
+    
+        var popup_3eb4bbffb3e531fdcf62f68cca5d87ca = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_7f71ef8459cede0d915ff51a6b168ccc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE1LiBKxatybWFsYSBTdHJhbmQ8L3N0cm9uZz48YnI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvMS8xOS9KxatybWFsYV9iZWFjaCxfTGF0dmlhLmpwZyIgd2lkdGg9IjE4MCI+PGJyPgogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPU1ham9yaStCZWFjaCwrSnVybWFsYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_3eb4bbffb3e531fdcf62f68cca5d87ca.setContent(i_frame_7f71ef8459cede0d915ff51a6b168ccc);
+        
+
+        marker_b33da173e39e2fb58bb7e85308b49cfc.bindPopup(popup_3eb4bbffb3e531fdcf62f68cca5d87ca)
+        ;
+
+        
+    
+    
+            marker_b33da173e39e2fb58bb7e85308b49cfc.bindTooltip(
+                `<div>
+                     15. Jūrmala Strand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e7082cab263ae7bd4b7f436b1749a34 = L.marker(
+                [56.922, 23.9735],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_d479a2bb1fa163506ff18319c8a40f18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7e7082cab263ae7bd4b7f436b1749a34.setIcon(icon_d479a2bb1fa163506ff18319c8a40f18);
+        
+    
+        var popup_50b3417fda3b63a268fe887358550057 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_b13eb485bcf56486c879073899d7c80d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE2LiBSaWdhIEFpcnBvcnQgKFJJWCk8L3N0cm9uZz48YnI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvNC80NC9SaWdhX0ludGVybmF0aW9uYWxfQWlycG9ydC5qcGciIHdpZHRoPSIxODAiPjxicj4KICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1SaWdhK0ludGVybmF0aW9uYWwrQWlycG9ydCIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_50b3417fda3b63a268fe887358550057.setContent(i_frame_b13eb485bcf56486c879073899d7c80d);
+        
+
+        marker_7e7082cab263ae7bd4b7f436b1749a34.bindPopup(popup_50b3417fda3b63a268fe887358550057)
+        ;
+
+        
+    
+    
+            marker_7e7082cab263ae7bd4b7f436b1749a34.bindTooltip(
+                `<div>
+                     16. Riga Airport (RIX)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c76c9cade8d420b351df40bbc4870913 = L.marker(
+                [56.9476, 24.1072],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_93e85181ddaae71656810e77b50ec840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c76c9cade8d420b351df40bbc4870913.setIcon(icon_93e85181ddaae71656810e77b50ec840);
+        
+    
+        var popup_8b472a33eda98579c153fe31b9140036 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_1031e165b976b4e4f15c4d554e235518 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjI3LiBCbGFjayBNYWdpYyBCYXI8L3N0cm9uZz48YnI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvMy8zZi9CbGFja19NYWdpY19CYXJfUmlnYS5qcGciIHdpZHRoPSIxODAiPjxicj4KICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1LYWxrdStpZWxhKzEwLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_8b472a33eda98579c153fe31b9140036.setContent(i_frame_1031e165b976b4e4f15c4d554e235518);
+        
+
+        marker_c76c9cade8d420b351df40bbc4870913.bindPopup(popup_8b472a33eda98579c153fe31b9140036)
+        ;
+
+        
+    
+    
+            marker_c76c9cade8d420b351df40bbc4870913.bindTooltip(
+                `<div>
+                     27. Black Magic Bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc9b948296b0a58cd0aa1864333e948e = L.marker(
+                [56.9455, 24.0744],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_99fb8747f64e79127f26db980741635f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc9b948296b0a58cd0aa1864333e948e.setIcon(icon_99fb8747f64e79127f26db980741635f);
+        
+    
+        var popup_efffa297edf4685142140f69975363ae = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_6eca7f1404fdabc406fd0315d0c6fc47 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjUuIEthbG5jaWVtYSBLdmFydGFsZXQ8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9S2FsbmNpZW1hK2llbGErMzUsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_efffa297edf4685142140f69975363ae.setContent(i_frame_6eca7f1404fdabc406fd0315d0c6fc47);
+        
+
+        marker_dc9b948296b0a58cd0aa1864333e948e.bindPopup(popup_efffa297edf4685142140f69975363ae)
+        ;
+
+        
+    
+    
+            marker_dc9b948296b0a58cd0aa1864333e948e.bindTooltip(
+                `<div>
+                     5. Kalnciema Kvartalet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81727431b05c6d2d046d69352dd54341 = L.marker(
+                [56.9557, 24.1154],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_c39c061b84f7f4fa60d03b153641268c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81727431b05c6d2d046d69352dd54341.setIcon(icon_c39c061b84f7f4fa60d03b153641268c);
+        
+    
+        var popup_9be4c0b01eb2c76cd86b85bd5e8f9ae5 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_a3412d3e1671383c69f138213d89315d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjYuIEthbmVwZXMgS3VsdHVyYXMgQ2VudHJzPC9zdHJvbmc+PGJyPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL3RzZTMubW0uYmluZy5uZXQvdGg/aWQ9T0lQLlpqR1NFZDFkN3ZtbGMtWWVGU3VndUFIYUU3IiB3aWR0aD0iMTgwIj48YnI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9U2tvbGFzK2llbGErMTUsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_9be4c0b01eb2c76cd86b85bd5e8f9ae5.setContent(i_frame_a3412d3e1671383c69f138213d89315d);
+        
+
+        marker_81727431b05c6d2d046d69352dd54341.bindPopup(popup_9be4c0b01eb2c76cd86b85bd5e8f9ae5)
+        ;
+
+        
+    
+    
+            marker_81727431b05c6d2d046d69352dd54341.bindTooltip(
+                `<div>
+                     6. Kanepes Kulturas Centrs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_760af4c101a1fce700f46176623cda58 = L.marker(
+                [56.9448, 24.1261],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_10e9d9368425755b4792e770e8965675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_760af4c101a1fce700f46176623cda58.setIcon(icon_10e9d9368425755b4792e770e8965675);
+        
+    
+        var popup_f9c846c75c6326579cc599a3ea72b819 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_dacac06d9868a593f4365cf46e9f753b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjcuIExhc3TEgWRpamEgRGlzdHJpa3RldDwvc3Ryb25nPjxicj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1QdXJ2xKvFoWEraWVsYSsxMywrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_f9c846c75c6326579cc599a3ea72b819.setContent(i_frame_dacac06d9868a593f4365cf46e9f753b);
+        
+
+        marker_760af4c101a1fce700f46176623cda58.bindPopup(popup_f9c846c75c6326579cc599a3ea72b819)
+        ;
+
+        
+    
+    
+            marker_760af4c101a1fce700f46176623cda58.bindTooltip(
+                `<div>
+                     7. Lastādija Distriktet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_900e84c3387fdd48b27c607ef79bfb26 = L.marker(
+                [56.9443, 24.1335],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_29e46c9fe3383bead339b47268730741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_900e84c3387fdd48b27c607ef79bfb26.setIcon(icon_29e46c9fe3383bead339b47268730741);
+        
+    
+        var popup_69af6b0c1a1cc6e8f816fa3b5f515982 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_cda5d274f5d23c2269a26c6f902c61bd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjguIExhdGdhbGUgVGlyZ3VzPC9zdHJvbmc+PGJyPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPUZpcnNhK1NhZG92bmlrb3ZhK2llbGErOUEsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_69af6b0c1a1cc6e8f816fa3b5f515982.setContent(i_frame_cda5d274f5d23c2269a26c6f902c61bd);
+        
+
+        marker_900e84c3387fdd48b27c607ef79bfb26.bindPopup(popup_69af6b0c1a1cc6e8f816fa3b5f515982)
+        ;
+
+        
+    
+    
+            marker_900e84c3387fdd48b27c607ef79bfb26.bindTooltip(
+                `<div>
+                     8. Latgale Tirgus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_407cc1cc30bcaf7de821f19e64ae2a7d = L.marker(
+                [56.9584, 24.1091],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_f86489d57a594eeafa0f28ab4ac89987 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_407cc1cc30bcaf7de821f19e64ae2a7d.setIcon(icon_f86489d57a594eeafa0f28ab4ac89987);
+        
+    
+        var popup_8ddfd95befc1efd1ca22db64e84c1955 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_e2c78bf23e7f9ef1ae703ea65ea10107 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjkuIEFydCBOb3V2ZWF1IERpc3RyaWt0ZXQ8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9QWxiZXJ0YStpZWxhLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_8ddfd95befc1efd1ca22db64e84c1955.setContent(i_frame_e2c78bf23e7f9ef1ae703ea65ea10107);
+        
+
+        marker_407cc1cc30bcaf7de821f19e64ae2a7d.bindPopup(popup_8ddfd95befc1efd1ca22db64e84c1955)
+        ;
+
+        
+    
+    
+            marker_407cc1cc30bcaf7de821f19e64ae2a7d.bindTooltip(
+                `<div>
+                     9. Art Nouveau Distriktet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9825fe11799b2c463d2beb455171f8da = L.marker(
+                [56.9493, 24.1033],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_4576a4738abb6cafd0ed20695090f95e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9825fe11799b2c463d2beb455171f8da.setIcon(icon_4576a4738abb6cafd0ed20695090f95e);
+        
+    
+        var popup_2d0629ae04a71038a6f4b0fdbb467717 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_92cf4dababd4e849804199ba6a5c7973 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE0LiBQYXJ1bsSBc2ltIGthZmXigJl0ZWVrYTwvc3Ryb25nPjxicj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1NYXphK1BpbHMraWVsYSs0LCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_2d0629ae04a71038a6f4b0fdbb467717.setContent(i_frame_92cf4dababd4e849804199ba6a5c7973);
+        
+
+        marker_9825fe11799b2c463d2beb455171f8da.bindPopup(popup_2d0629ae04a71038a6f4b0fdbb467717)
+        ;
+
+        
+    
+    
+            marker_9825fe11799b2c463d2beb455171f8da.bindTooltip(
+                `<div>
+                     14. Parunāsim kafe’teeka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_517e08f2e247d45e22cf4b25b602003f = L.marker(
+                [56.9618, 24.1211],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_ffe5b9582e9530bf4e6ba4ebcd3759ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_517e08f2e247d45e22cf4b25b602003f.setIcon(icon_ffe5b9582e9530bf4e6ba4ebcd3759ab);
+        
+    
+        var popup_287fdfb980a6ac4e80ce837dba6d02a8 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_235ace27a2a904069695b1abcd05a967 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE3LiBNL0RhcmJuxKtjYSDigJMgSmF6eiBCYXI8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9QXJpc3RpZGErQnJpYW5hK2llbGErOSwrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_287fdfb980a6ac4e80ce837dba6d02a8.setContent(i_frame_235ace27a2a904069695b1abcd05a967);
+        
+
+        marker_517e08f2e247d45e22cf4b25b602003f.bindPopup(popup_287fdfb980a6ac4e80ce837dba6d02a8)
+        ;
+
+        
+    
+    
+            marker_517e08f2e247d45e22cf4b25b602003f.bindTooltip(
+                `<div>
+                     17. M/Darbnīca – Jazz Bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53265b58096edf7e8658e6e0531b1073 = L.marker(
+                [56.9468, 24.1121],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_4f3e1c309d0d8eaebab7701076d7c866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_53265b58096edf7e8658e6e0531b1073.setIcon(icon_4f3e1c309d0d8eaebab7701076d7c866);
+        
+    
+        var popup_be8d0012f6a312a87d2476b9a6e1fa5f = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_bcc20443066c9966c3ee880198351a85 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE4LiBGb3J1bXMgQm91dGlxdWUgSG90ZWw8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9VmFsbnUraWVsYSs0NSwrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_be8d0012f6a312a87d2476b9a6e1fa5f.setContent(i_frame_bcc20443066c9966c3ee880198351a85);
+        
+
+        marker_53265b58096edf7e8658e6e0531b1073.bindPopup(popup_be8d0012f6a312a87d2476b9a6e1fa5f)
+        ;
+
+        
+    
+    
+            marker_53265b58096edf7e8658e6e0531b1073.bindTooltip(
+                `<div>
+                     18. Forums Boutique Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a72880b07be90fb00bce93559529b65 = L.marker(
+                [56.9504, 24.1039],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_4d1f43a66e3795fa3ad3d7fa01568574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a72880b07be90fb00bce93559529b65.setIcon(icon_4d1f43a66e3795fa3ad3d7fa01568574);
+        
+    
+        var popup_3cdac225ae2eba7423ddb3823e047d90 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_5626359ca5eac2a29277dd6220251212 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjE5LiAzIFBhdsSBcnUgUmVzdG9yxIFuczwvc3Ryb25nPjxicj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1Ub3LFhmEraWVsYSs0LCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_3cdac225ae2eba7423ddb3823e047d90.setContent(i_frame_5626359ca5eac2a29277dd6220251212);
+        
+
+        marker_5a72880b07be90fb00bce93559529b65.bindPopup(popup_3cdac225ae2eba7423ddb3823e047d90)
+        ;
+
+        
+    
+    
+            marker_5a72880b07be90fb00bce93559529b65.bindTooltip(
+                `<div>
+                     19. 3 Pavāru Restorāns
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bf98b4bf2103b88ed673188e3621946 = L.marker(
+                [56.9491, 24.1045],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_18eef225430bccd7f38081bf82d845e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bf98b4bf2103b88ed673188e3621946.setIcon(icon_18eef225430bccd7f38081bf82d845e6);
+        
+    
+        var popup_2322e0d4fa984fe44a65d10994c94974 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_d796a5a953fcf0ba5efb800478213cf2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjIwLiBSaXZlciBDcnVpc2VzIExhdHZpYTwvc3Ryb25nPjxicj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT0xMS4rbm92ZW1icmEra3Jhc3RtYWxhLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_2322e0d4fa984fe44a65d10994c94974.setContent(i_frame_d796a5a953fcf0ba5efb800478213cf2);
+        
+
+        marker_2bf98b4bf2103b88ed673188e3621946.bindPopup(popup_2322e0d4fa984fe44a65d10994c94974)
+        ;
+
+        
+    
+    
+            marker_2bf98b4bf2103b88ed673188e3621946.bindTooltip(
+                `<div>
+                     20. River Cruises Latvia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1136c921da8642fde37a47e00a617b73 = L.marker(
+                [56.9499, 24.1034],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_8103fba665dfdf6db6f1a5f2807916a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1136c921da8642fde37a47e00a617b73.setIcon(icon_8103fba665dfdf6db6f1a5f2807916a4);
+        
+    
+        var popup_9fa4313cd80acaefce1a1491808b804f = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_09e309e4dc2f7467eb775ad4566d897f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjIxLiBCYXJlbnRzPC9zdHJvbmc+PGJyPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPURvbWErbGF1a3VtcysyLCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_9fa4313cd80acaefce1a1491808b804f.setContent(i_frame_09e309e4dc2f7467eb775ad4566d897f);
+        
+
+        marker_1136c921da8642fde37a47e00a617b73.bindPopup(popup_9fa4313cd80acaefce1a1491808b804f)
+        ;
+
+        
+    
+    
+            marker_1136c921da8642fde37a47e00a617b73.bindTooltip(
+                `<div>
+                     21. Barents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b167b782c25a701aec950c56eb89bcb0 = L.marker(
+                [56.9497, 24.1031],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_85511c10bd12281669feb00e53174904 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b167b782c25a701aec950c56eb89bcb0.setIcon(icon_85511c10bd12281669feb00e53174904);
+        
+    
+        var popup_7f4e7701bcc5fbed63421bf37b5d4474 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_32be6ac57285436e13d72e9da9f2de45 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjIyLiBCIEJhcnM8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9QitCYXJzLCtEb21hK2xhdWt1bXMsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_7f4e7701bcc5fbed63421bf37b5d4474.setContent(i_frame_32be6ac57285436e13d72e9da9f2de45);
+        
+
+        marker_b167b782c25a701aec950c56eb89bcb0.bindPopup(popup_7f4e7701bcc5fbed63421bf37b5d4474)
+        ;
+
+        
+    
+    
+            marker_b167b782c25a701aec950c56eb89bcb0.bindTooltip(
+                `<div>
+                     22. B Bars
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55f40965eebe6c7455d12e349c2e9aad = L.marker(
+                [56.9474, 24.1076],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_3457338bb7acb8e2a0b391a3cbd7e20b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55f40965eebe6c7455d12e349c2e9aad.setIcon(icon_3457338bb7acb8e2a0b391a3cbd7e20b);
+        
+    
+        var popup_ee884f6ec88f390a2890fd40572a75ef = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_0114adc9dc8338ad592216d70041eb80 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjIzLiBEb21pbmkgQ2FuZXM8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9U2thcsWGdStpZWxhKzE4LCtSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_ee884f6ec88f390a2890fd40572a75ef.setContent(i_frame_0114adc9dc8338ad592216d70041eb80);
+        
+
+        marker_55f40965eebe6c7455d12e349c2e9aad.bindPopup(popup_ee884f6ec88f390a2890fd40572a75ef)
+        ;
+
+        
+    
+    
+            marker_55f40965eebe6c7455d12e349c2e9aad.bindTooltip(
+                `<div>
+                     23. Domini Canes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24d0d468eb90fd68465c821dfebaa912 = L.marker(
+                [56.9501, 24.1041],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_0b28e292bf77ef2da1b49fc072e7f110 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24d0d468eb90fd68465c821dfebaa912.setIcon(icon_0b28e292bf77ef2da1b49fc072e7f110);
+        
+    
+        var popup_ce8adfe1471590a87da499166ae79fc9 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_285ca69e276fb9a6ef14c454d6f05fd3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjI0LiBDaGVmJ3MgQ29ybmVyPC9zdHJvbmc+PGJyPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPUNoZWYlMjdzK0Nvcm5lcitSaWdhIiB0YXJnZXQ9Il9ibGFuayI+w4VibiBpIEdvb2dsZSBNYXBzPC9hPgogICAgPC9kaXY+CiAgICA=" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_ce8adfe1471590a87da499166ae79fc9.setContent(i_frame_285ca69e276fb9a6ef14c454d6f05fd3);
+        
+
+        marker_24d0d468eb90fd68465c821dfebaa912.bindPopup(popup_ce8adfe1471590a87da499166ae79fc9)
+        ;
+
+        
+    
+    
+            marker_24d0d468eb90fd68465c821dfebaa912.bindTooltip(
+                `<div>
+                     24. Chef's Corner
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efe900e00e4cda130adc018b6a6b9e91 = L.marker(
+                [56.9507, 24.1128],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_93550b816bc9e5e1bc88912f445d25d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_efe900e00e4cda130adc018b6a6b9e91.setIcon(icon_93550b816bc9e5e1bc88912f445d25d1);
+        
+    
+        var popup_f5f5a640bafa1542ac8c68818072ed71 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_833c10635225290fcf241b8968c2e660 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjI1LiBDYWZlIE1pbzwvc3Ryb25nPjxicj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSJodHRwczovL21hcHMuZ29vZ2xlLmNvbS8/cT1QaWxzK2llbGErNywrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_f5f5a640bafa1542ac8c68818072ed71.setContent(i_frame_833c10635225290fcf241b8968c2e660);
+        
+
+        marker_efe900e00e4cda130adc018b6a6b9e91.bindPopup(popup_f5f5a640bafa1542ac8c68818072ed71)
+        ;
+
+        
+    
+    
+            marker_efe900e00e4cda130adc018b6a6b9e91.bindTooltip(
+                `<div>
+                     25. Cafe Mio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c7dd14e246d789b28be6f736829f9b6 = L.marker(
+                [56.956, 24.1126],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_3e55964bf09f5808fe3419f194e9e649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c7dd14e246d789b28be6f736829f9b6.setIcon(icon_3e55964bf09f5808fe3419f194e9e649);
+        
+    
+        var popup_770828adbe38f76cf5d2e25f9b564160 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_bae27bf88fdfd449a1f7fc6eace29fdd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjI2LiBWLiBLdXplIENhZmU8L3N0cm9uZz48YnI+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9VGlyZ29udStpZWxhKzgsK1JpZ2EiIHRhcmdldD0iX2JsYW5rIj7DhWJuIGkgR29vZ2xlIE1hcHM8L2E+CiAgICA8L2Rpdj4KICAgIA==" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_770828adbe38f76cf5d2e25f9b564160.setContent(i_frame_bae27bf88fdfd449a1f7fc6eace29fdd);
+        
+
+        marker_4c7dd14e246d789b28be6f736829f9b6.bindPopup(popup_770828adbe38f76cf5d2e25f9b564160)
+        ;
+
+        
+    
+    
+            marker_4c7dd14e246d789b28be6f736829f9b6.bindTooltip(
+                `<div>
+                     26. V. Kuze Cafe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e284cbe4d3ebbcb6fb827b88d228fd44 = L.marker(
+                [56.9472, 24.1085],
+                {}
+            ).addTo(map_e5dd3df30832b0dc100bc41822bf4551);
+        
+    
+            var icon_9fce0cdbf3929f761de3a3e73fe15229 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e284cbe4d3ebbcb6fb827b88d228fd44.setIcon(icon_9fce0cdbf3929f761de3a3e73fe15229);
+        
+    
+        var popup_b86130ab5ab5da35d943bf4d45cdd1f9 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_4709067bb3a3762b1b62e2ce0ca2a1d8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4Ij4KICAgICAgICA8c3Ryb25nPjI4LiBCb24gVml2YW50PC9zdHJvbmc+PGJyPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5nb29nbGUuY29tLz9xPVNrdW51K2llbGErNCwrUmlnYSIgdGFyZ2V0PSJfYmxhbmsiPsOFYm4gaSBHb29nbGUgTWFwczwvYT4KICAgIDwvZGl2PgogICAg" width="210" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_b86130ab5ab5da35d943bf4d45cdd1f9.setContent(i_frame_4709067bb3a3762b1b62e2ce0ca2a1d8);
+        
+
+        marker_e284cbe4d3ebbcb6fb827b88d228fd44.bindPopup(popup_b86130ab5ab5da35d943bf4d45cdd1f9)
+        ;
+
+        
+    
+    
+            marker_e284cbe4d3ebbcb6fb827b88d228fd44.bindTooltip(
+                `<div>
+                     28. Bon Vivant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
